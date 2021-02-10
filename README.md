@@ -1,6 +1,6 @@
 # JavaEE-BoatMSTI
 Boat Management System to Terengganu Island (BoatMSTI) is a one-stop center platform for online booking ticket.
-There have two (2) users:
+- [Boat Management System to Terengganu Islands Preview](https://www.youtube.com/watch?v=x6uWEUm0azg)
 
 ## Tourism Companies
 - [x] Register Company
@@ -15,5 +15,3 @@ There have two (2) users:
 - [x] Check Ticket Availability
 - [X] Booking Boat Service Ticket
 - [x] Create Feedback
-
-- [Boat Management System to Terengganu Islands Preview](https://www.youtube.com/watch?v=x6uWEUm0azg)
