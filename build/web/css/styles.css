@@ -1,0 +1,812 @@
+body, .bg{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+    background-image: url(../img/bg2.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*------------- Header CSS --------------*/
+#header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)), url(../img/island.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.boatmsti-box{
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-shadow: 1px 1px 10px #000;
+}
+
+/*.boatmsti-box a{
+    font-size: 20px;
+    border-radius : 50px;
+    border-color: #51702C;
+    color: #51702C;
+    padding: 10px;   
+}
+
+.boatmsti-box a:hover{
+    background-color: #51702C;
+    color: #fff;
+}*/
+
+.boatmsti-box a{
+    border-radius: 50px;
+    /*    background-color: #51702C;*/
+    border: 2px solid #51702C !important;
+    border: none;
+    color: #88A23D;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    transition: all 0.5s;
+    width: 250px;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.boatmsti-box .btn:hover{
+    background-color: #51702C;
+}
+
+.boatmsti-box a span{
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.boatmsti-box a span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.boatmsti-box a:hover span{
+    padding-right: 20px;
+    color: #fff;
+}
+
+.boatmsti-box a:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+.boatmsti-box img{
+    border-radius: 50%;
+    width: 250px;
+    border: 2px solid black;
+}
+
+.boatmsti-box h1{
+    font-family: Candara;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.boatmsti-box p{
+    font-size: 25px;
+    color: #fff;
+}
+
+.scroll-btn{
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #fff;
+    padding: 10px 10px 20px;
+    border-radius: 30px;
+}
+
+.scroll-bar span{
+    border: 2px solid #fff;
+    font-size: 10px;
+    border-radius: 30px;
+}
+
+.scroll-bar{
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(10px);}
+}
+
+/*--------------- About ------------*/
+
+.about{
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+
+.about p{
+    font-size: 25px;
+}
+
+.about .col-md-12 button{
+    font-size: 20px;
+    background-color: #51702C;
+    color: white;
+    padding: 10px;
+}
+
+.about .col-md-12 button:hover{
+    background-color: #88A23D;
+    transition: 0.5s;
+}
+
+.profile-img{
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.nav-bar{
+    top: 0;
+    position: sticky;
+    z-index: 3;
+}
+
+.navbar{
+    background-color: #1B5360;
+}
+
+.nav-bar .fa-bars{
+    font-size: 35px;
+    color: #E9D59C;
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+
+.navbar-nav{
+    float: left;
+    text-align: left;
+}
+
+@media all and (max-width: 699px){
+    .user{
+        width: 100%;
+    }
+}
+
+.nav-link{
+    color: #E9D59C !important;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    color: #fff;
+    background-color: #51702C;
+}
+
+@media all and (max-width: 766px){ 
+    .boatService img{
+        display: none;
+    }
+
+    .boatService .search button{
+        margin-top: 10px;
+        width: 100% !important;
+    }
+}
+
+.boatService{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #DDDDD1;
+}
+
+.boatService .search{
+    margin-top: 10px;
+    background-color: #3D969E;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 5%;
+    /*    padding-right: 5%;*/
+}
+
+/*.boatService .search label{
+    margin-left: 10px;
+}*/
+
+/*.boatService .search input{
+    margin-left: 10px;
+    margin-right: 20px;
+}*/
+
+.boatService .search button{
+    background-color: #51702C;
+    color: #fff;
+    width: 120px;
+    align-content: center;
+}
+
+.boatService .search button:hover{
+    background-color: #88A23D;
+    transition: 0.5s;
+}
+
+.boatServiceList{
+    height: 50vh;
+    margin-top: 10px;
+    overflow-y: auto;
+}
+
+.boatServiceList .card{
+    border-width: 2px;
+    border-color: #51702C;
+}
+
+.boatServiceList .card-body{
+    height: 60px;
+    overflow: hidden;
+}
+
+.boatServiceList .card-body:hover{
+    height: 100%;
+    overflow: hidden;
+}
+
+/*-------------- Services -------------*/
+
+.services{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.services h1{
+    margin-bottom: 15px;
+}
+
+.services-box{
+    background: #DDDDD1;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.services-box .fa{
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.services-box span{
+    margin: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.services-box p{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #777;
+}
+
+.services-box:hover{
+    background: #3D969E;
+    color: #fff;
+    transition: 1s;
+}
+
+.services-box:hover p{
+    color: #fff;
+}
+
+.services-box .btn{
+    border-color: #51702C;
+    color: #51702C;
+}
+
+.services-box .btn:hover{
+    background-color: #51702C;
+    color: #fff;
+}
+
+/*---------------joined company------------*/
+.joinedcompany{
+    margin-top: 35px;
+}
+.slide{
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #3D969E;
+    margin-bottom: 10px;
+}
+
+.carousel-indicators li {
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);      
+}
+
+
+.carousel-indicators .active {
+    background-color: #88A23D;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 312px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.joinedcompany button, .grnBtn button{
+    font-size: 20px;
+    background-color: #51702C;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.joinedcompany button:hover, .grnBtn button:hover{
+    color: #fff;
+    background-color: #88A23D;
+    transition: 0.5s;
+}
+
+.redBtn input{
+    font-size: 20px;
+    background-color: #8E1600;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.redBtn input:hover{
+    color: #fff;
+    background-color: #B53737;
+    transition: 0.5s;
+}
+
+@media print{
+    .printBtn{
+        display: none;
+    }
+}
+/*--------- Contact ------------*/
+
+.contact{
+    padding-top: 50px;
+    background: #3D969E;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.contact .row{
+    padding: 30px 0;
+    font-size: 22px;
+}
+
+.contact .col-md-4 .fa{
+    padding: 10px;
+    font-size: 40px;
+}
+
+.contact .btn{
+    padding: 10px 25px 10px 25px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background: transparent;
+}
+
+.contact .btn:focus{
+    box-shadow: none !important;
+}
+
+.contact .btn:hover{
+    border: 2px solid #000 !important;
+    background: #000 !important;
+    transition: 0.6s;
+}
+
+.contact .btn .fa{
+    margin-right: 10px;
+}
+
+.footer{
+    background: #1B5360;
+    height: 50px;
+    margin-top: 50px;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.fa-heart-o{
+    color: red;
+}
+
+/*------------- Social Icons ------------*/
+
+/*.social-icons{
+    top: 50%;
+    transform: translateY(-50%);
+    position: sticky;
+    z-index: 1;
+    width: 80px;
+}
+
+.social-icons ul{
+    padding: initial;
+}
+
+.social-icons ul li{
+    height: 40px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 12px;
+    padding-top: 6px;
+    margin-top: 5px;
+    color: #fff;
+    background: #51702C;
+}
+
+.social-icons ul li:hover{
+    padding-left: 30px;
+    width: 80px;
+    transition: 1s;
+}*/
+
+/*------------- login & register page ------------*/
+
+/*.loginpage, .registerpage{
+    height: 100vh;
+    background: url(../img/test.png);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}*/
+
+.loginlogo, .registerlogo{
+    margin: auto;
+    bottom: 50%;
+    left: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.loginform, .registerform{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    border: 3px solid #f1f1f1;
+    margin: auto;
+    bottom: 50%;
+    left: 50%;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 2px 2px 10px #000;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+#registerform{
+    /*    max-width: 500px;*/
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.loginform input{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/*.registerform select{
+    font-size: 20px;
+    margin-top: 10px;
+}*/
+
+.loginform button{
+    font-size: 20px;
+    background-color: #51702C;
+    color: #fff;
+    box-shadow: 0px 2px 10px #000;
+}
+
+.loginform button:hover{
+    background-color: #88A23D;
+    color: #fff;    
+}
+
+#registerform button{
+    font-size: 20px;
+    background-color: #51702C;
+    color: #fff;
+    box-shadow: 0px 2px 10px #000;
+}
+
+#registerform button:hover{
+    background-color: #88A23D;
+    color: #fff;  
+}
+
+/*----------- Tourism & CustomerDashboard ------------*/
+.tch img{
+    width: 100%;
+    height: 312px;
+}
+
+.img, .ch img{
+    width: 300px;
+    height: 312px;
+    left: 50%;
+    bottom: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    outline: none;
+}
+
+@media all and (max-width: 360px){
+    .editimage{
+        bottom: 1%;
+        left: 80%;
+    }
+
+    .deleteimage{
+        bottom: 1%;
+        right: 3%;
+    }
+
+    .custName {
+        text-align: center;
+    }
+}
+
+.tchCover, .chCover{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: #51702C;
+    font-size: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tchCover:hover, .chCover:hover{
+    border-radius: 50%;
+    background-color: #51702C;
+    color: #fff;
+}
+
+.editimage{
+    bottom: 1%;
+    right: 5%;
+}
+
+.deleteimage{
+    bottom: 1%;
+    right: 2%;
+}
+
+.iconbutton{
+    border: none;
+    background: none;
+    color: #51702C;
+}
+
+.iconbutton:focus{
+    outline: none;
+}
+
+.iconbutton:hover{
+    color: #88A23D;
+}
+
+.tchicon, .chicon{
+    color: #51702C;
+}
+
+.tchicon:hover, .chicon:hover{
+    color: #88A23D;
+}
+
+.table-striped th{
+    background: #1B5360;
+    color: #fff;
+}
+
+/*  Customer Booking List in TourismCompany*/
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    margin-top: 50px;
+    width: 110px;
+    margin-right: 10px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #51702C;
+    margin-top: 50px;
+}
+
+@media all and (max-width: 360px){
+    .has-search .form-control {
+        padding-left: 2.375rem;
+        margin-right: 10px;
+        width: 80px;
+    }
+
+    .has-search .form-control-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #51702C;
+        margin-right: 10px;
+    }
+
+    table.dataTable thead .sorting:after,
+    table.dataTable thead .sorting:before,
+    table.dataTable thead .sorting_asc:after,
+    table.dataTable thead .sorting_asc:before,
+    table.dataTable thead .sorting_asc_disabled:after,
+    table.dataTable thead .sorting_asc_disabled:before,
+    table.dataTable thead .sorting_desc:after,
+    table.dataTable thead .sorting_desc:before,
+    table.dataTable thead .sorting_desc_disabled:after,
+    table.dataTable thead .sorting_desc_disabled:before {
+        bottom: .5em;
+    }
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 55px;
+    background-color: #DDDDD1;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.sticky .btn{
+    background-color: #3D969E;
+    color: white;
+    width: 200px;
+}
+
+.sticky .btn:hover{
+    background-color: #1B5360;
+    color: white;
+}
+
+/* Rating Star Widgets Style */
+.rating-stars ul {
+    list-style-type:none;
+    padding:0;
+
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+    display:inline-block;
+
+}
+
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+    font-size:2em; /* Change the size of the stars */
+    color:#ccc; /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+    color:#FFCC36;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+    color:#FF912C;
+}
+
+/* Progress bar for rating */
+progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 80%;
+    height: 20px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* Google Translater */
+
+/* OVERRIDE GOOGLE TRANSLATE WIDGET CSS BEGIN */
+div#google_translate_element div.goog-te-gadget-simple {
+    border: none;
+    background-color: transparent;
+    /*background-color: #17548d;*/ /*#e3e3ff*/
+}
+
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value:hover {
+    text-decoration: none;
+}
+
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span {
+    color: #E9D59C;
+}
+
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover {
+    color: white;
+}
+
+.goog-te-gadget-icon {
+    display: none !important;
+    /*background: url("url for the icon") 0 0 no-repeat !important;*/
+}
+
+/* Remove the down arrow */
+/* when dropdown open */
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(213, 213, 213);"] {
+    display: none;
+}
+/* after clicked/touched */
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(118, 118, 118);"] {
+    display: none;
+}
+/* on page load (not yet touched or clicked) */
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(155, 155, 155);"] {
+    display: none;
+}
+
+/* Remove span with left border line | (next to the arrow) in Chrome & Firefox */
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="border-left: 1px solid rgb(187, 187, 187);"] {
+    display: none;
+}
+/* Remove span with left border line | (next to the arrow) in Edge & IE11 */
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="border-left-color: rgb(187, 187, 187); border-left-width: 1px; border-left-style: solid;"] {
+    display: none;
+}
+/* HIDE the google translate toolbar */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+body {
+    top: 0px !important;
+}
+/* OVERRIDE GOOGLE TRANSLATE WIDGET CSS END */
